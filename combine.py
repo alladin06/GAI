@@ -36,7 +36,7 @@
 
 import streamlit as st
 from streamlit_option_menu import option_menu
-# from main import main
+from main import main
 from notes import notes_main
 from enter_data import main_data
 from app import locate_nearby_hospitals_main
@@ -60,14 +60,13 @@ def main():
     elif app_selection == "Notes":
         notes_main()
     elif app_selection == "Locate Nearby Hospitals":
-        # locate_nearby_hospitals_main()
-        pass
+        locate_nearby_hospitals_main()
     elif app_selection == "Track Progress":
         track_progress_main()
         # pass
     elif app_selection == "Alert SOS":
-        # sos_main()
-        pass
+        sos_main()
+        # pass
     elif app_selection=="Data":
         # pass
         main_data()
