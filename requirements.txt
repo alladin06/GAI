@@ -1,0 +1,11 @@
+geopy
+streamlit
+pandas
+requests
+geocoder
+twilio
+pygsheets
+plotly
+tabulate
+datetime
+streamlit-option-menu
