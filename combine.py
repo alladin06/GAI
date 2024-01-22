@@ -55,8 +55,8 @@ def main():
     # app_selection = st.sidebar.radio("Select an option", ["Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS","Data"])
 
     if app_selection == "Medicine Reminder":
-        main()
-        # pass
+        # main()
+        pass
     elif app_selection == "Notes":
         notes_main()
     elif app_selection == "Locate Nearby Hospitals":
