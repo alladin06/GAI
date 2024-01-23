@@ -45,7 +45,7 @@ from sayantan import sos_main
 
 def main():
     st.sidebar.title("Geriatic AI")
-    menu = ["Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS","Data"]
+    menu = ["Data","Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
