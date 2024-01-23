@@ -52,7 +52,7 @@ def main():
         options = menu,
         # icons = ['house', 'bullseye', 'card-checklist', 'emoji-smile', 'journal']
     )
-    # app_selection = st.sidebar.radio("Select an option", ["Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS","Data"])
+    # app_selection = st.sidebar.radio("Select an option", ["Data","Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS"])
 
     if app_selection == "Medicine Reminder":
         # main()
