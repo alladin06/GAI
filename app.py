@@ -55,7 +55,7 @@ def nearby_hospi():
             except:
                 pass
                 distances.append(a)
-                time.append(0)
+                time.append(i)
                 i = i+1
     
         cord = df["Location_Coordinates"].values
