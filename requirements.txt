@@ -9,3 +9,4 @@ plotly
 tabulate
 datetime
 streamlit-option-menu
+streamlit_js_eval
