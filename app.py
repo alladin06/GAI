@@ -17,7 +17,7 @@ def nearby_hospi():
         print(loc1['longitude'])
         locname = geoLoc.reverse(f"{loc1['latitude']}, {loc1['longitude']}")
         st.write(f"Your coordinates are {loc1['latitude']},{loc1['longitude']}")
-        st.write(f"You are at {locname.address})
+        st.write(f"You are at {locname.address}")
 
         longitude =  float(loc1['longitude'])
         latitude =float(loc1['latitude'])
