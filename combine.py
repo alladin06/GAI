@@ -46,7 +46,7 @@ from login import main_l
 
 def main():
     st.sidebar.title("Geriatic AI")
-    menu = ["Login","Data","Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS"]
+    menu = ["Login","Track Progress","Data","Medicine Reminder", "Notes", "Locate Nearby Hospitals",  "Alert SOS"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
