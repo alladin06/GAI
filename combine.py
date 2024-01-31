@@ -70,8 +70,8 @@ def main():
         track_progress_main()
         # pass
     elif app_selection == "Alert SOS":
-        # sos_main()
-        pass
+        sos_main()
+        # pass
     elif app_selection=="Data":
         # pass
         main_data()
