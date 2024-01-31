@@ -53,6 +53,7 @@
 import streamlit as st
 import geocoder
 from twilio.rest import Client
+from streamlit_js_eval import streamlit_js_eval, copy_to_clipboard, create_share_link, get_geolocation
 
 # Twilio credentials
 TWILIO_ACCOUNT_SID = 'ACd148fb2af53ec122c15271a7a08cd2d0'
@@ -62,8 +63,10 @@ EMERGENCY_CONTACTS = ['+917869844761']  # Add your emergency contacts' phone num
 
 # Function to get current location using the Geocoder library
 def get_location():
+    loc = get_geolocation()
+    loc1 = loc['coords']
     location = geocoder.ip('me')
-    return location.latlng if location else None
+    return loc1['latitude'], loc1['longitude'] if loc1 else None
 
 # Function to send SMS notifications using Twilio
 def send_sms(message, to):
