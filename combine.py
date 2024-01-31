@@ -42,10 +42,11 @@ from enter_data import main_data
 from app import nearby_hospi
 from visualize_data import  track_progress_main
 from sayantan import sos_main
+from login import main_l
 
 def main():
     st.sidebar.title("Geriatic AI")
-    menu = ["Data","Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS"]
+    menu = ["Login","Data","Medicine Reminder", "Notes", "Locate Nearby Hospitals", "Track Progress", "Alert SOS"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
@@ -57,6 +58,9 @@ def main():
     if app_selection == "Medicine Reminder":
         # main()
         pass
+    elif app_selection=="Login":
+        main_l()
+        
     elif app_selection == "Notes":
         notes_main()
     elif app_selection == "Locate Nearby Hospitals":
