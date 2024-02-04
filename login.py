@@ -86,10 +86,10 @@ def main_l():
         sheet = gc.create('GAI')
     wks = sheet.worksheet_by_title("Credentials")
     
-    st.title("Login/ SignUp")
+    # st.title("Login/ SignUp")
     all_worksheets = sheet.worksheets()
     
-    st.subheader("Login")
+    st.title("Login")
     login_email = st.text_input("Email:")
     login_password = st.text_input("Password:", type="password")
     
@@ -102,7 +102,7 @@ def main_l():
             else:
                 st.error("Invalid Login. Please try again.")
     
-    st.subheader("New User Registration")
+    st.title("New User Registration")
     new_user_option = st.checkbox("New User?")
     
     if new_user_option:
