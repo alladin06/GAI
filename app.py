@@ -6,6 +6,7 @@ import pandas as pd
 from geopy.geocoders import Nominatim
 
 def nearby_hospi():
+    st.title('Find Hospitals Near You')
     if st.checkbox("Get my  location"):
         geoLoc = Nominatim(user_agent="GetLoc")
         df = pd.read_csv("hospital_directory.csv")
