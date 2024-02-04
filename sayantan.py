@@ -57,9 +57,9 @@ from streamlit_js_eval import streamlit_js_eval, copy_to_clipboard, create_share
 
 # Twilio credentials
 TWILIO_ACCOUNT_SID = 'ACd148fb2af53ec122c15271a7a08cd2d0'
-TWILIO_AUTH_TOKEN = '0fb00a9eb0407c11841eb6e0f7a13334'
+TWILIO_AUTH_TOKEN = 'd8765d63dd3a1b44aafa866bc913bbfd'
 TWILIO_PHONE_NUMBER = '+12018319411'
-EMERGENCY_CONTACTS = ['+917869844761']  # Add your emergency contacts' phone numbers
+EMERGENCY_CONTACTS = ['+919583143255']  # Add your emergency contacts' phone numbers
 
 # Function to get current location using the Geocoder library
 def get_location():
