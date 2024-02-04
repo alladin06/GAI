@@ -1,7 +1,3 @@
-<div style="width:20%; margin: auto;">
-![alt text](icon.png)
-</div>
-
 # Project Documentation
 
 ## Medicine Reminder:
