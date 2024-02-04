@@ -44,7 +44,7 @@ from login import main_l
 
 def main():
 
-    PAGE_CONFIG = {"page_title": "Healthy Buddy",
+    PAGE_CONFIG = {"page_title": "Geriatic AI",
                "page_icon": "icon.jpg", "layout": "centered"}
     st.set_page_config(**PAGE_CONFIG)
     
@@ -64,7 +64,7 @@ def main():
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
     st.sidebar.title("Geriatic AI")
-    menu = ["Login","Track Progress","Health Data Recorder", "Notes", "Locate Nearby Hospitals",  "Alert SOS"]
+    menu = ["Login", "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals",  "Alert SOS", "Notes"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
