@@ -44,7 +44,7 @@ from login import main_l
 
 def main():
 
-    PAGE_CONFIG = {"page_title": "Geriatic AI",
+    PAGE_CONFIG = {"page_title": "Geriatric AI",
                "page_icon": "icon.jpg", "layout": "centered"}
     st.set_page_config(**PAGE_CONFIG)
     
