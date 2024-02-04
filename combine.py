@@ -90,7 +90,7 @@ def main():
     elif app_selection == "Alert SOS":
         sos_main()
         # pass
-    elif app_selection=="Data":
+    elif app_selection=="Health Data Recorder":
         # pass
         main_data()
 
