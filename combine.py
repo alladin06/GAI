@@ -45,7 +45,7 @@ from login import main_l
 def main():
 
     PAGE_CONFIG = {"page_title": "Geriatric AI",
-               "page_icon": "icon.jpg", "layout": "centered"}
+               "page_icon": "icon.png", "layout": "centered"}
     st.set_page_config(**PAGE_CONFIG)
     
     page_bg_img = f"""
