@@ -32,8 +32,6 @@
 # else:
 #     st.error("Invalid option selected.")
 
-
-
 import streamlit as st
 from streamlit_option_menu import option_menu
 # from main import main
@@ -45,6 +43,26 @@ from sayantan import sos_main
 from login import main_l
 
 def main():
+
+    PAGE_CONFIG = {"page_title": "Healthy Buddy",
+               "page_icon": "icon.jpg", "layout": "centered"}
+    st.set_page_config(**PAGE_CONFIG)
+    
+    page_bg_img = f"""
+    <style>
+    [data-testid="stAppViewContainer"] > .main {{
+    background-image: url("https://img.freepik.com/premium-photo/green-background-with-bokeh-rays_582451-37.jpg");
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    }}
+    [data-testid="stHeader"] {{
+    background: rgba(0,0,0,0);
+    }}
+    </style>
+    """
+    st.markdown(page_bg_img, unsafe_allow_html=True)
+    
     st.sidebar.title("Geriatic AI")
     menu = ["Login","Track Progress","Health Data Recorder", "Notes", "Locate Nearby Hospitals",  "Alert SOS"]
     with st.sidebar:
