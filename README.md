@@ -1,3 +1,5 @@
+![alt text](icon.png)
+
 # Project Documentation
 
 ## Medicine Reminder:
