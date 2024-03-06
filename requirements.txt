@@ -10,3 +10,10 @@ tabulate
 datetime
 streamlit-option-menu
 streamlit_js_eval
+ultralytics
+matplotlib
+opencv-python
+opencv-python-headless>=4.1.2
+numpy
+onnx
+scikit-learn
