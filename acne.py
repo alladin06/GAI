@@ -50,15 +50,24 @@ def main_acne():
             if source_index == 0:
                 with st.spinner(text='Preparing Images'):
                     for img in os.listdir(get_detection_folder()):
-                        st.image(str(Path(f'{get_detection_folder()}') / img))
+                        image_path = str(Path(f'{get_detection_folder()}') / img)
+
+                        # Load the image using PIL to check if it's valid
+                        try:
+                            image = Image.open(image_path)
+                            st.image(image_path)
+                        except Exception as e:
+                            st.error(f"Error loading image {image_path}: {e}")
 
                     st.balloons()
             else:
                 with st.spinner(text='Preparing Video'):
                     for vid in os.listdir(get_detection_folder()):
-                        st.video(str(Path(f'{get_detection_folder()}') / vid))
+                        video_path = str(Path(f'{get_detection_folder()}') / vid)
+
+                        # Display video path or any other relevant info
+                        st.write(video_path)
 
                     st.balloons()
-
 if __name__ == "__main__":
     main_acne()
