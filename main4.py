@@ -6,13 +6,13 @@ def main():
 
     # Language selection dropdown
     language = st.selectbox("Choose a language:", ["English", "Finnish", "German"])
-
-    if language == "English":
-        subprocess.run(["streamlit", "run", "combine.py"])
-    elif language == "Finnish":
-        subprocess.run(["streamlit", "run", "main2.py"])
-    elif language == "German":
-        subprocess.run(["streamlit", "run", "main3.py"])
+    if st.button("Translate):    
+        if language == "English":
+            subprocess.run(["streamlit", "run", "combine.py"])
+        elif language == "Finnish":
+            subprocess.run(["streamlit", "run", "main2.py"])
+        elif language == "German":
+            subprocess.run(["streamlit", "run", "main3.py"])
 
 def run_main(script):
     st.info(f"Running {script}")
