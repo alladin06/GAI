@@ -19,5 +19,5 @@ def run_main(script):
     # For now, let's just print a message
     st.write(f"Script {script} executed successfully!")
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
