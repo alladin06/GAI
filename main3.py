@@ -62,5 +62,5 @@ def main():
     elif app_selection == "Akne-Erkennung":
         main_acne()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
