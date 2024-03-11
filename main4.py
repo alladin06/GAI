@@ -6,7 +6,7 @@ def main():
 
     # Language selection dropdown
     language = st.selectbox("Choose a language:", ["English", "Finnish", "German"])
-    if st.button("Translate):    
+    if st.button("Translate):
         if language == "English":
             subprocess.run(["streamlit", "run", "combine.py"])
         elif language == "Finnish":
