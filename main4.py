@@ -1,4 +1,5 @@
 import streamlit as st
+import subprocess
 
 def main():
     st.title("Language Selector App")
@@ -7,11 +8,11 @@ def main():
     language = st.selectbox("Choose a language:", ["English", "Finnish", "German"])
 
     if language == "English":
-        run_main("combine.py")
+        subprocess.run(["streamlit", "run", "combine.py"])
     elif language == "Finnish":
-        run_main("main2.py")
+        subprocess.run(["streamlit", "run", "main2.py"])
     elif language == "German":
-        run_main("main3.py")
+        subprocess.run(["streamlit", "run", "main3.py"])
 
 def run_main(script):
     st.info(f"Running {script}")
