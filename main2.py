@@ -1,35 +1,35 @@
-import streamlit as st
-import subprocess
+# import streamlit as st
+# import subprocess
 
-# Funktio valitun Python-skriptin suorittamiseen
-def execute_script(script_name):
-    subprocess.run(["streamlit", "run", script_name])
+# # Funktio valitun Python-skriptin suorittamiseen
+# def execute_script(script_name):
+#     subprocess.run(["streamlit", "run", script_name])
 
-# Streamlit App
-st.title("Geriatrinen tekoäly")
+# # Streamlit App
+# st.title("Geriatrinen tekoäly")
 
-selected_option = st.sidebar.radio("Valitse vaihtoehto", [
-    "Lääkemuistutin",
-    "Muistiinpanot",
-    "Paikanna läheiset sairaalat",
-    "Hätä-SOS",
-    "Seuraa edistymistä"
-])
+# selected_option = st.sidebar.radio("Valitse vaihtoehto", [
+#     "Lääkemuistutin",
+#     "Muistiinpanot",
+#     "Paikanna läheiset sairaalat",
+#     "Hätä-SOS",
+#     "Seuraa edistymistä"
+# ])
 
-options_to_scripts = {
-    "Lääkemuistutin": "main.py",
-    "Muistiinpanot": "notes.py",
-    "Paikanna läheiset sairaalat": "app.py",
-    "Hätä-SOS": "main_s.py",
-    "Seuraa edistymistä": "visualize_data.py"
-}
+# options_to_scripts = {
+#     "Lääkemuistutin": "main.py",
+#     "Muistiinpanot": "notes.py",
+#     "Paikanna läheiset sairaalat": "app.py",
+#     "Hätä-SOS": "main_s.py",
+#     "Seuraa edistymistä": "visualize_data.py"
+# }
 
-# Suorita valittu skripti
-if selected_option in options_to_scripts:
-    script_name = options_to_scripts[selected_option]
-    execute_script(script_name)
-else:
-    st.error("Virheellinen vaihtoehto valittu.")
+# # Suorita valittu skripti
+# if selected_option in options_to_scripts:
+#     script_name = options_to_scripts[selected_option]
+#     execute_script(script_name)
+# else:
+#     st.error("Virheellinen vaihtoehto valittu.")
 
 import streamlit as st
 from streamlit_option_menu import option_menu
