@@ -65,7 +65,7 @@ def main():
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
     st.sidebar.title("Geriatric AI")
-    menu = [ "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals",  "Alert SOS", "Notes","Acne Detection"]
+    menu = [ "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals", "Acne Detection", "Hair Health Prediction", "Alert SOS", "Notes"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
@@ -96,6 +96,8 @@ def main():
         main_data()
     elif app_selection=="Acne Detection":
         main_acne()
+    elif app_selection=="Hair Health Prediction":
+        pass    
 
 if __name__ == "__main__":
     main()
