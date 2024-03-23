@@ -57,7 +57,7 @@ from streamlit_js_eval import streamlit_js_eval, copy_to_clipboard, create_share
 
 # Twilio credentials
 TWILIO_ACCOUNT_SID = 'ACfb09735781fc39700a6def11ae615bfa'
-TWILIO_AUTH_TOKEN = 'd0f99b0e9db7bd9055cf506c2bbc3c88'
+TWILIO_AUTH_TOKEN = st.secrets["db_password"]
 TWILIO_PHONE_NUMBER = '+15203574586'
 EMERGENCY_CONTACTS = ['+917869844761']  # Add your emergency contacts' phone numbers
 
