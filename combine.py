@@ -41,7 +41,7 @@ from app import nearby_hospi
 from visualize_data import  track_progress_main
 from acne import main_acne
 from sayantan import sos_main
-from login import main_l
+# from login import main_l
 
 def main():
 
@@ -65,7 +65,7 @@ def main():
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
     st.sidebar.title("Geriatric AI")
-    menu = ["Login", "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals",  "Alert SOS", "Notes","Acne Detection"]
+    menu = [ "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals",  "Alert SOS", "Notes","Acne Detection"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
@@ -77,8 +77,8 @@ def main():
     if app_selection == "Medicine Reminder":
         # main()
         pass
-    elif app_selection=="Login":
-        main_l()
+    # elif app_selection=="Login":
+    #     main_l()
         
     elif app_selection == "Notes":
         notes_main()
