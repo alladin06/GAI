@@ -41,6 +41,7 @@ from app import nearby_hospi
 from visualize_data import  track_progress_main
 from acne import main_acne
 from sayantan import sos_main
+from hair_app import hair_health_main
 # from login import main_l
 
 def main():
@@ -97,7 +98,7 @@ def main():
     elif app_selection=="Acne Detection":
         main_acne()
     elif app_selection=="Hair Health Prediction":
-        pass    
+        hair_health_main()    
 
 if __name__ == "__main__":
     main()
