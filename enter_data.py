@@ -120,21 +120,14 @@ def main_data():
             st.warning('Enter all values.')
 
 # Access stored data in session_state
-# if 'session_state' in st.session_state:
-#     user_name = st.session_state['session_state'].get('user_name','')
-#     sleep_hrs = st.session_state['session_state'].get('sleep_hrs','')
-#     weight = st.session_state['session_state'].get('weight','')
-#     bp = st.session_state['session_state'].get('bp','')
-#     sugar_level = st.session_state['session_state'].get('sugar_level','')
-#     st.write(f"Stored Data: {user_name}, {sleep_hrs}, {weight}, {bp}, {sugar_level}")
-user_name = st.session_state['session_state'].get('user_name', '') if 'session_state' in st.session_state else ''
-sleep_hrs = st.session_state['session_state'].get('sleep_hrs', '') if 'session_state' in st.session_state else ''
-weight = st.session_state['session_state'].get('weight', '') if 'session_state' in st.session_state else ''
-bp = st.session_state['session_state'].get('bp', '') if 'session_state' in st.session_state else ''
-sugar_level = st.session_state['session_state'].get('sugar_level', '') if 'session_state' in st.session_state else ''
-
-if user_name or sleep_hrs or weight or bp or sugar_level:
+if 'session_state' in st.session_state:
+    user_name = st.session_state['session_state'].get('user_name','')
+    sleep_hrs = st.session_state['session_state'].get('sleep_hrs','')
+    weight = st.session_state['session_state'].get('weight','')
+    bp = st.session_state['session_state'].get('bp','')
+    sugar_level = st.session_state['session_state'].get('sugar_level','')
     st.write(f"Stored Data: {user_name}, {sleep_hrs}, {weight}, {bp}, {sugar_level}")
+
 
 if __name__ == "__main__":
     main_data()
