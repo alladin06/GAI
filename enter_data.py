@@ -123,7 +123,7 @@ if 'session_state' in st.session_state:
     user_name = st.session_state['session_state'].get('user_name')
     sleep_hrs = st.session_state['session_state'].get('sleep_hrs')
     weight = st.session_state['session_state'].get('weight',)
-    bp = st.session_state['session_state'].get('bp', '')
+    bp = st.session_state['session_state'].get('bp')
     sugar_level = st.session_state['session_state'].get('sugar_level')
 
     st.write(f"Stored Data: {user_name}, {sleep_hrs}, {weight}, {bp}, {sugar_level}")
