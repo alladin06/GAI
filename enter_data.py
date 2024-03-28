@@ -110,11 +110,11 @@ def main_data():
             st.success('Data saved!')
 
             # Store data in session_state
-            st.session_state['session_state']['user_name'] = user_name
-            st.session_state['session_state']['sleep_hrs'] = sleep_hrs
-            st.session_state['session_state']['weight'] = weight
-            st.session_state['session_state']['bp'] = bp
-            st.session_state['session_state']['sugar_level'] = sugar_level
+            st.session_state['user_name'] = user_name
+            st.session_state['sleep_hrs'] = sleep_hrs
+            st.session_state['weight'] = weight
+            st.session_state['bp'] = bp
+            st.session_state['sugar_level'] = sugar_level
 
         else:
             st.warning('Enter all values.')
