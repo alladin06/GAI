@@ -59,6 +59,7 @@ import pygsheets
 import pandas as pd
 
 # Setup session state
+st.session_state['session_state'] = {}
 if 'session_state' not in st.session_state:
     st.session_state['session_state'] = {}
 
