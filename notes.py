@@ -74,8 +74,6 @@ def notes_main():
     
             response = Speech2Text.recognize(audio = audio_bytes, content_type = "audio/wav")
             recognized_text = response.result['results'][0]['alternatives'][0]['transcript']
-    
-            st.write(recognized_text)
           
             st.markdown(" ")
             st.markdown("*Content Recognized*")
