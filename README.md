@@ -35,7 +35,7 @@
 
 ## Project Link:
 
-#### https://geriatic.streamlit.app/
+#### https://gaicombine.streamlit.app/
 
 
 
