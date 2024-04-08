@@ -5,6 +5,7 @@ import streamlit as st
 from PIL import Image
 import subprocess
 import os
+import torch
 
 # Setup session state
 if 'session_state' not in st.session_state:
