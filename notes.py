@@ -72,7 +72,7 @@ def notes_main():
       Speech2Text = SpeechToTextV1(authenticator = auth)
       Speech2Text.set_service_url(apiUrl)
 
-      response = Speech2Text.recognize(audio = audio_bytes, content_type = "audio/wav")
+      response = Speech2Text.recognize(audio = @audio_bytes, content_type = "audio/wav")
       recognized_text = response.result['results'][0]['alternatives'][0]['transcript']
 
       st.write(recognized_text)
