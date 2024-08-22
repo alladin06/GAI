@@ -66,7 +66,7 @@ def main():
     st.markdown(page_bg_img, unsafe_allow_html=True)
     
     st.sidebar.title("Geriatric AI")
-    menu = [ "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals", "Acne Detection", "Hair Health Prediction", "Alert SOS", "Notes"]
+    menu = [ "Health Data Recorder", "Track Progress", "Locate Nearby Hospitals", "Acne Detection", "Hair Health Prediction", "Alert SOS", "Notes","Events Near Me"]
     with st.sidebar:
         app_selection = option_menu(
         menu_title = None,
