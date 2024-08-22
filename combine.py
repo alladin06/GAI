@@ -99,8 +99,7 @@ def main():
         main_acne()
     elif app_selection=="Hair Health Prediction":
         hair_health_main()
-    elif app_selection == "Events Near Me":
-    st.markdown("""
+    elif app_selection == "Events Near Me":st.markdown("""
     **Remote event**: Digivartti: the topic is Google Calendar  
     **When:** Fri, 20.9.2024 from 10 to 10.30  
     **Where:** remotely on Zoom  
