@@ -107,23 +107,23 @@ def main():
         [More information](https://www.entersenior.fi/tapahtumat/digivartti-0924/)
         
         **Local event**: Solutions for a good everyday life  
-        **When**:Wed-Thurs, 2-3 October 2024 
-        *Where:** Helsinki Exhibition Centre, Messuaukio 1, 00520 Helsinki  
+        **When:**Wed-Thurs, 2-3 October 2024 
+        **Where:** Helsinki Exhibition Centre, Messuaukio 1, 00520 Helsinki  
         [More information](https://hyvaika.expomark.fi/)
         
-        **Travel**: Northern Portugal, Porto and port wine farms  
-        **When**: Mon-Sat, 21-26 October 2024  
-        **Where**: Porto, Portugal 
+        **Travel:** Northern Portugal, Porto and port wine farms  
+        **When:** Mon-Sat, 21-26 October 2024  
+        **Where:** Porto, Portugal 
         [More information](https://kilta.senioriliitto.fi/Tapahtumat/tapahtumatiedot.aspx?id=28261)
         
-        **A hybrid event**: Identify an online scam  
-        **When**: Wed, 23.10.2024 at 1:30 p.m. to 3:00 p.m 
-        **Where**:remotely in Zoom, stand in Kampi 
+        **A hybrid event:** Identify an online scam  
+        **When:** Wed, 23.10.2024 at 1:30 p.m. to 3:00 p.m 
+        **Where:**Remotely in Zoom, stand in Kampi 
         [More information](https://www.entersenior.fi/tapahtumat/tunnista-nettihuijaus/)
         
-        **Local event**: Guided gym  
-        **When**: Mon, 30.12.2024 at 10.00-11.00
-        **Where**: Myllypuro senior center/service center, Myllymatkantie 4, Helsinki  
+        **Local event:** Guided gym  
+        **When:** Mon, 30.12.2024 at 10.00-11.00
+        **Where:** Myllypuro senior center/service center, Myllymatkantie 4, Helsinki  
         [More information](https://tapahtumat.hel.fi/fi/events/helsinki:agh3rorroe)
         """)
 
